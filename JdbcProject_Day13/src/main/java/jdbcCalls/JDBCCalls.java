@@ -23,6 +23,7 @@ java JDBCCalls 4 (without specifying the rollno.), it means that details of all 
 /* Table Schema :-
 
 create table student(RollNo int(4) Primary Key, name varchar(20) not null, standard varchar(3) not null, Date_of_Birth Date, Fees double(9,2));
+
 */
 
 package jdbcCalls;
