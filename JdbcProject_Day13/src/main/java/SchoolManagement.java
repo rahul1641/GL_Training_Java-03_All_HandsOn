@@ -15,6 +15,11 @@ Fees Number (9,2)
 
 When a new student joins the school, the student record is inserted in the student table.*/
 
+/* Table Schema :-
+
+create table school(RollNo int(4) Primary Key, StudentName varchar(20) not null, Standard varchar(3) not null,Date_of_Birth Date, Fees double(9,2));
+*/
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
