@@ -52,6 +52,9 @@ Write the code to display details of all the students, if no roll no. is passed,
 
 If while executing the main program, the roll no. is passed, then it should display the record of that particular student.*/
 
+//StudentLog Table Schema :-
+//create table StudentLog (RollNo int(4), StudentName varchar(20), Standard varchar(3), Date_Of_Leaving date);
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
