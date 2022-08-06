@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+      
+       <bean id="c" class="com.accountmanagement.Customer">
+ 	 <property name="first_name" value="Rahul"></property> 
+	 <property name="last_name" value="Ranjan"></property>
+	 <property name="account" ref="acc"></property>
+	 </bean>
+	 
+	<bean id="acc" class="com.accountmanagement.Account">
+	<property name="balance" value="5000"></property>
+	</bean>  
+	
+	<bean id="area" class="com.areaofcircle.AreaOfCircle">
+	<constructor-arg name="radius" value="7"></constructor-arg>
+	</bean>
+        
+</beans>
